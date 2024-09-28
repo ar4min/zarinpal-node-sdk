@@ -1,4 +1,3 @@
-// src/endpoint/paymentGateway/requestTypes/ReverseRequest.ts
 
 import { Fillable } from '../../Fillable';
 
@@ -11,7 +10,6 @@ export class ReverseRequest extends Fillable(class {}) {
         this.fill(inputs);
     }
 
-    // اعتبارسنجی داده‌ها
     public validate(): void {
         this.validateMerchantId();
         this.validateAuthority();
@@ -31,7 +29,6 @@ export class ReverseRequest extends Fillable(class {}) {
         }
     }
 
-    // تبدیل به رشته JSON
     public toString(): string {
         this.validate();
 

@@ -1,4 +1,3 @@
-// src/endpoint/graphql/requestTypes/TransactionListRequest.ts
 
 import { Fillable } from '../../Fillable';
 
@@ -18,14 +17,12 @@ export class TransactionListRequest extends Fillable(class {}) {
         this.fill(inputs);
     }
 
-    // اعتبارسنجی داده‌ها
     public validate(): void {
         if (!this.terminalId) {
             throw new Error('Terminal ID is required.');
         }
     }
 
-    // تبدیل به رشته GraphQL
     public toGraphQL(): string {
         this.validate();
 

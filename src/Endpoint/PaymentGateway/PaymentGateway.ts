@@ -1,4 +1,3 @@
-// src/endpoint/PaymentGateway.ts
 
 import { ZarinPal } from '../../Zarinpal';
 import { PaymentGatewayException } from '../../httpClient/Exception/PaymentGatewayException';

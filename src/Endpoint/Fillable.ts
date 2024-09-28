@@ -1,4 +1,3 @@
-// src/endpoint/Fillable.ts
 
 type Constructor<T = {}> = new (...args: any[]) => T;
 

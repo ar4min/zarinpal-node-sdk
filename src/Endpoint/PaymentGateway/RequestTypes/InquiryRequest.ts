@@ -1,4 +1,3 @@
-// src/endpoint/paymentGateway/requestTypes/InquiryRequest.ts
 
 import { Fillable } from '../../Fillable';
 
@@ -11,7 +10,6 @@ export class InquiryRequest extends Fillable(class {}) {
         this.fill(inputs);
     }
 
-    // اعتبارسنجی داده‌های ورودی
     public validate(): void {
         this.validateMerchantId();
         this.validateAuthority();
@@ -33,7 +31,6 @@ export class InquiryRequest extends Fillable(class {}) {
         }
     }
 
-    // تبدیل داده‌ها به رشته JSON
     public toString(): string {
         this.validate();
 
