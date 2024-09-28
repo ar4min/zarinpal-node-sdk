@@ -1,4 +1,3 @@
-// tests/BaseTestCase.ts
 
 import { SDKOptions } from '../src/Options';
 import axios, { AxiosInstance } from 'axios';
@@ -24,7 +23,6 @@ export class BaseTestCase {
         return this.options;
     }
 
-    // برای تمیز کردن موک‌ها بعد از هر تست
     tearDown() {
         this.mockClient.reset();
     }

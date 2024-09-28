@@ -1,8 +1,6 @@
-// src/endpoint/paymentGateway/responseTypes/RequestResponse.ts
 
 import { Fillable } from '../../Fillable';
 
-// اعمال mixin برای اضافه کردن رفتارهای Fillable
 export class RequestResponse extends Fillable(class {}) {
     public authority: string = '';
     public code: number = 0;
@@ -13,7 +11,7 @@ export class RequestResponse extends Fillable(class {}) {
     public status: string = '';
 
     constructor(inputs: Partial<RequestResponse> = {}) {
-        super(); // فراخوانی سازنده‌ی Fillable
-        this.fill(inputs); // پر کردن ویژگی‌ها از ورودی‌ها
+        super();
+        this.fill(inputs);
     }
 }

@@ -1,4 +1,3 @@
-// src/endpoint/graphql/RefundService.ts
 
 import axios, { AxiosInstance } from 'axios';
 import { RefundRequest } from './RequestTypes/RefundRequest';

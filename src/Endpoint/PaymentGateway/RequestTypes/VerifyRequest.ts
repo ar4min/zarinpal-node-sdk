@@ -1,4 +1,3 @@
-// src/endpoint/paymentGateway/requestTypes/VerifyRequest.ts
 
 import { Fillable } from '../../Fillable';
 
@@ -12,7 +11,6 @@ export class VerifyRequest extends Fillable(class {}) {
         this.fill(inputs);
     }
 
-    // اعتبارسنجی داده‌ها
     public validate(): void {
         this.validateMerchantId();
         this.validateAmount();
@@ -39,7 +37,6 @@ export class VerifyRequest extends Fillable(class {}) {
         }
     }
 
-    // تبدیل به رشته JSON
     public toString(): string {
         this.validate();
 

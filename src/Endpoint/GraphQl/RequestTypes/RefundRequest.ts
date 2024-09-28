@@ -22,7 +22,6 @@ export class RefundRequest extends Fillable(class {}) {
         this.fill(inputs);
     }
 
-    // اعتبارسنجی داده‌ها
     public validate(): void {
         if (!this.sessionId) {
             throw new Error('Session ID is required.');
@@ -32,7 +31,6 @@ export class RefundRequest extends Fillable(class {}) {
         }
     }
 
-    // تبدیل داده‌ها به رشته GraphQL
     public toGraphQL(): string {
         this.validate();
 

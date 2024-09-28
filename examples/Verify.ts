@@ -26,14 +26,12 @@ const options = new SDKOptions({
 const zarinpal = new ZarinPal(options);
 const paymentGateway = zarinpal.paymentGateway();
 
-// فرض کنید authority و status از پارامترهای کوئری URL به دست می‌آیند.
 const urlParams = new URLSearchParams(window.location.search);
 const authority = urlParams.get('Authority');
 const status = urlParams.get('Status');
 
 (async () => {
     if (status === 'OK' && authority) {
-        // دریافت مبلغ از دیتابیس (تابع فرضی)
         const amount = await getAmountFromDatabase(authority);
 
         if (amount) {
